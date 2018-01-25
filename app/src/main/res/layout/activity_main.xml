@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.ibrapptly.fadingtoast.MainActivity">
+
+    <Button
+        android:id="@+id/btnUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCentre"
+        android:layout_alignStart="@+id/btnCentre"
+        android:layout_marginBottom="56dp"
+        android:onClick="fadeUp"
+        android:text="Up"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnCentre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnNormal"
+        android:layout_centerVertical="true"
+        android:onClick="fadeCentre"
+        android:text="Centre"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCentre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:onClick="fadeDown"
+        android:text="Normal"
+        android:textAllCaps="false" />
+</RelativeLayout>
