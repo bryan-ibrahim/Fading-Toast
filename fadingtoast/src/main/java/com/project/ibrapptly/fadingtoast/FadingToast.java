@@ -12,12 +12,12 @@ import android.widget.Toast;
 
 public class FadingToast {
 
-    private LayoutInflater layoutInflater;
-    private TextView tvCustomToastText;
-    private View view;
+    static private LayoutInflater layoutInflater;
+    static private TextView tvCustomToastText;
+    static private View view;
 
     @SuppressLint("InflateParams")
-    public void fadeUp(Context context, String message) {
+    public static void fadeUp(Context context, String message) {
 
         layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         assert layoutInflater != null;
@@ -50,7 +50,7 @@ public class FadingToast {
         toast.show();
     }
 
-    public void fadeCentre(Context context, String message) {
+    public static void fadeCentre(Context context, String message) {
 
         layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = layoutInflater.inflate(R.layout.popup, null);
@@ -82,7 +82,7 @@ public class FadingToast {
         toast.show();
     }
 
-    public void fadeDown(Context context, String message) {
+    public static void fadeDown(Context context, String message) {
 
         layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = layoutInflater.inflate(R.layout.popup, null);
