@@ -1,11 +1,14 @@
 # Fading-Toast----Android
-A simple animated toast that fades from left to right
+A simple animated toast that fades from left to right         
+Gradle
 
-
-1. Add the JitPack repository to your build.gradle(project) file
-
-           allprojects { repositories { ... maven { url 'https://jitpack.io' } } }
-
-2. Gradle Dependency
-
-            compile 'com.github.bryan-ibrahim:Fading-Toast:0.0.3''
+Project level build.gradle
+            allprojects {
+                repositories {
+                    maven { url 'https://jitpack.io' }
+                }
+            }
+App level build.gradle
+            dependencies {
+                implementation 'com.github.bryan-ibrahim:Fading-Toast:0.0.3'
+            }
