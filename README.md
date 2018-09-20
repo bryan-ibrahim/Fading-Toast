@@ -2,7 +2,7 @@
 A simple animated toast that fades from left to right
 
 
-1. Add the JitPack repository to your build file
+1. Add the JitPack repository to your build.gradle(project) file
 
            allprojects { repositories { ... maven { url 'https://jitpack.io' } } }
 
